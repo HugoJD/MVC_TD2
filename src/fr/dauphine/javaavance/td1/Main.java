@@ -7,13 +7,15 @@ public class Main {
 		return super.toString();
 	}
 	
-	int foo;
+	private int foo;
 	public void setFoo(int foo) {
 		this.foo = foo;
 	}
 	public int getFoo() {
 		return foo;
 	}
+	
+	private String str;
 
 	public static void main(String[] args) {
 		System.out.println("");

@@ -11,22 +11,13 @@ public class Polyline {
 	
 	public Polyline(int capacity) {
 		if(capacity<=0) {
-			throw new IllegalArgumentException();
+			throw new IllegalArgumentException("La capacité ne peut être négative");
 		}
 		this.tab = new Point[capacity];
 		this.capacity = capacity;
 		this.index = 0;
 	}
 	
-	public boolean contains(Point p1) {
-		Objects.requireNonNull(p1);
-		for (Point p : this.tab) {
-			if(p.equals(p1)) {
-				return true;
-			}
-		}
-		return false;
-	}
 	
 	public void add(Point p) {
 		Objects.requireNonNull(p);
@@ -40,5 +31,15 @@ public class Polyline {
 	
 	public int nbPoints() {
 		return this.tab.length;
+	}
+	
+	public boolean contains(Point p1) {
+		Objects.requireNonNull(p1);
+		for (Point p : this.tab) {
+			if(p.equals(p1)) {
+				return true;
+			}
+		}
+		return false;
 	}
 }

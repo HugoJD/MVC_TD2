@@ -17,7 +17,7 @@ public class Circle {
 	
 	@Override
 	public String toString() {
-		return "Cercle : centre = " + this.center.toString() + " et rayon = " + this.radius + " et d'aire = " + this.area();
+		return "Cercle : centre = " + this.center + " et rayon = " + this.radius + " et d'aire = " + this.area();
 	}
 	
 	public Point getCenter() {

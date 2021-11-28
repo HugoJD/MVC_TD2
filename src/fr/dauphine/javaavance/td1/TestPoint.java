@@ -25,6 +25,7 @@ public class TestPoint {
 		polyline.add(p1);
 		polyline.add(p3);
 		polyline.add(new Point(2,3));
+		//polyline.add(new Point(1,4));
 		//polyline.add(null);
 		
 		Point p=new Point(1,2); 
