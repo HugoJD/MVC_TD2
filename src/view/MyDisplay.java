@@ -3,8 +3,10 @@ package view;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import java.awt.*;
+import java.util.Observable;
+import java.util.Observer;
 
-public class MyDisplay extends JPanel{
+public class MyDisplay extends JPanel implements Observer{
 	
 	
 	public static void main(String[] args) {
@@ -21,5 +23,11 @@ public class MyDisplay extends JPanel{
 	protected void paintComponent(Graphics g) {
 		g.drawLine(50, 50, 250, 250);
 		System.out.println("drawLine");
+	}
+
+	@Override
+	public void update(Observable o, Object arg) {
+		//TODO();
+		
 	}
 }
