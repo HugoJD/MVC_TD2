@@ -2,6 +2,10 @@ package fr.dauphine.ja.jolionhugo.shapes;
 
 import java.util.ArrayList;
 
+import model.Circle;
+import model.Point;
+import model.Ring;
+
 public class TestPoint {
 
 	public static void main(String[] args) {

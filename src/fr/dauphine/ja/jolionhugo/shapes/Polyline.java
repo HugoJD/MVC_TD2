@@ -1,8 +1,10 @@
 package fr.dauphine.ja.jolionhugo.shapes;
 
-import java.util.LinkedList;
+
 import java.util.List;
 import java.util.Objects;
+
+import model.Point;
 
 public class Polyline {
 	private final int capacity;

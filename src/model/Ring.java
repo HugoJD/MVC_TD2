@@ -1,4 +1,4 @@
-package fr.dauphine.ja.jolionhugo.shapes;
+package model;
 
 import java.util.Objects;
 

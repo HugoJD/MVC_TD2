@@ -6,11 +6,6 @@ import java.awt.*;
 
 public class MyDisplay extends JPanel{
 	
-	@Override
-	protected void paintComponent(Graphics g) {
-		g.drawLine(50, 50, 250, 250);
-		System.out.println("drawLine");
-	}
 	
 	public static void main(String[] args) {
 		JFrame frame = new JFrame("Java Avance - Graphic Display");
@@ -20,5 +15,11 @@ public class MyDisplay extends JPanel{
 		
 		MyDisplay d = new MyDisplay();
 		frame.add(d);
+	}
+	
+	@Override
+	protected void paintComponent(Graphics g) {
+		g.drawLine(50, 50, 250, 250);
+		System.out.println("drawLine");
 	}
 }
