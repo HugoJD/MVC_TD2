@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.ja.jolionhugo.shapes;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -11,7 +11,7 @@ public class Polyline {
 	
 	public Polyline(int capacity) {
 		if(capacity<=0) {
-			throw new IllegalArgumentException("La capacité ne peut être négative");
+			throw new IllegalArgumentException("La capacitï¿½ ne peut ï¿½tre nï¿½gative");
 		}
 		this.tab = new Point[capacity];
 		this.capacity = capacity;

@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.ja.jolionhugo.shapes;
 
 import java.util.ArrayList;
 
@@ -6,15 +6,15 @@ public class TestPoint {
 
 	public static void main(String[] args) {
 		/*Point p = new Point();
-		System.out.println(p.x + " " + p.y); // Ne fonctionne pas parce que x et y sont des attributs privés
+		System.out.println(p.x + " " + p.y); // Ne fonctionne pas parce que x et y sont des attributs privï¿½s
 		*/
 		
 		Point p1 = new Point(1,2);
 		Point p2 = p1;
 		Point p3 = new Point(1,2);
 		
-		System.out.println(p1 == p2); // true ==> p1 et p2 pointent vers le même objet
-		System.out.println(p1 == p3); //false ==> p1 et p3 ne pointent pas vers le même objet
+		System.out.println(p1 == p2); // true ==> p1 et p2 pointent vers le mï¿½me objet
+		System.out.println(p1 == p3); //false ==> p1 et p3 ne pointent pas vers le mï¿½me objet
 		
 		ArrayList<Point> list = new ArrayList<>();
 		list.add(p1);

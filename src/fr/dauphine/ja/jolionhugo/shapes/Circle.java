@@ -1,4 +1,4 @@
-package fr.dauphine.javaavance.td1;
+package fr.dauphine.ja.jolionhugo.shapes;
 
 import java.util.Objects;
 
@@ -8,7 +8,7 @@ public class Circle {
 	
 	public Circle(Point center, int radius) {
 		if(radius<=0) {
-			throw new IllegalArgumentException("Le rayon d'un cercle ne peut être négatif.");
+			throw new IllegalArgumentException("Le rayon d'un cercle ne peut ï¿½tre nï¿½gatif.");
 		}
 		Objects.requireNonNull(center);
 		this.center=new Point(center.getX(), center.getY());
